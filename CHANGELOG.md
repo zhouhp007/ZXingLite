@@ -1,12 +1,63 @@
-## 版本记录
+## 版本日志
 
-#### v2.1.1：2021-8-4 
+#### v3.2.0：2024-07-16
+* 更新CameraScan至v1.2.0
+* 更新ViewfinderView至v1.2.0
+* 优化细节
+
+#### v3.1.1：2024-04-29
+* 更新CameraScan至v1.1.1
+* 更新zxing至v3.5.3
+
+#### v3.1.0：2023-12-31
+* 更新CameraScan至v1.1.0
+* 更新zxing至v3.5.2
+* 更新compileSdkVersion至34
+* 更新Gradle至v8.0
+
+#### v3.0.1：2023-9-13
+* 更新CameraScan至v1.0.1
+* 更新ViewfinderView至v1.1.0
+
+#### v3.0.0：2023-8-23
+* 将通用基础类拆分移除并进行重构，后续维护更便捷
+* 移除 **CameraScan** 相关核心类，改为依赖[CameraScan](https://github.com/jenly1314/CameraScan)
+* 移除扫码取景视图 **ViewfinderView**，改为依赖[ViewfinderView](https://github.com/jenly1314/ViewfinderView)
+* 移除**CaptureActivity**和****CaptureFragment**，新增**BarcodeCameraScanActivity**和****BarcodeCameraScanFragment**来替代
+* 优化扫描分析过程的性能体验（优化帧数据分析过程）
+
+#### v2.4.0：2023-4-15
+* 优化CameraScan的缺省配置（CameraConfig相关配置）
+* 优化ViewfinderView自定义属性（新增laserDrawableRatio）
+* 优化ImageAnalyzer中YUV数据的处理
+* 更新CameraX至v1.2.2
+
+#### v2.3.1：2023-3-4
+* 更新CameraX至v1.2.1
+* 更新Gradle至v7.5
+* 优化细节
+
+#### v2.3.0：2022-12-11
+* 更新CameraX至v1.2.0
+* 更新zxing至v3.5.1
+* 更新compileSdkVersion至33
+
+#### v2.2.1：2022-6-22
+* 更新CameraX至v1.1.0-rc02
+
+#### v2.2.0：2022-5-31
+* 更新CameraX至v1.1.0-rc01
+* 更新compileSdkVersion至31
+* 更新Gradle至v7.2
+
+#### v2.1.1：2021-8-4
 * 更新CameraX至v1.0.1
 * 优化CameraConfig的一些默认配置
 
 #### v2.1.0：2021-6-30 (从v2.1.0开始不再发布至JCenter)
 * 更新CameraX至v1.0.0
 * 优化细节
+* 发布至MavenCentral
 
 #### v2.0.3：2021-3-26
 * 更新CameraX至v1.0.0-rc03
@@ -28,7 +79,7 @@
 * minSdk要求从 **16+** 改为 **21+**
 
 #### v1.1.9：2020-4-28
-* 修复1.1.8版本优化细节时，不小心改出个Bug(fix #86) 
+* 修复1.1.8版本优化细节时，不小心改出个Bug(fix #86)
 
 #### v1.1.8：2020-4-27
 *  统一日志管理
